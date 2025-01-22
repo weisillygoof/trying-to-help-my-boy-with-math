@@ -2,6 +2,7 @@ const numberOne = document.querySelector('#number1');
 const numberTwo = document.querySelector('#number2');
 const formula = document.querySelector('#formula');
 const mathButton = document.querySelector('#math-button');
+const product = document.querySelector('#product')
 
 mathButton.addEventListener('click', function (event) {
   event.preventDefault();
@@ -10,8 +11,9 @@ mathButton.addEventListener('click', function (event) {
   const secondNumber = Number(numberTwo.value);
 
   if (formula.value === 'add') {
-    console.log(firstNumber + secondNumber);
+    product.textContent = 'Product: ' + (firstNumber + secondNumber);
   } else if (formula.value === 'subtract') {
+    product.textContent = 'Product: ' +
     console.log(firstNumber - secondNumber);
   } else if (formula.value === 'multiply') {
     console.log(firstNumber * secondNumber);
@@ -20,4 +22,8 @@ mathButton.addEventListener('click', function (event) {
   } else {
     console.log('No formula selected');
   }
+
 });
+
+
+
