@@ -11,17 +11,17 @@ mathButton.addEventListener('click', function (event) {
   const secondNumber = Number(numberTwo.value);
 
   if (formula.value === 'add') {
-    product.textContent = 'Product: ' + (firstNumber + secondNumber);
+     product.textContent = 'Product: ' + (firstNumber + secondNumber);
   } else if (formula.value === 'subtract') {
-    product.textContent = 'Product: ' +
-    console.log(firstNumber - secondNumber);
+     product.textContent = 'Product: ' + (firstNumber - secondNumber);
   } else if (formula.value === 'multiply') {
-    console.log(firstNumber * secondNumber);
+     product.textContent = 'Product: ' + (firstNumber * secondNumber);
   } else if (formula.value === 'divide') {
-    console.log(firstNumber / secondNumber);
-  } else {
-    console.log('No formula selected');
+     product.textContent = 'Product: ' + (firstNumber / secondNumber);
   }
+  //  else {
+  //    product.textContent = 'No formula selected';
+  // } -------- Tok ut dette siden det ikkje blir relevant når det er umulig å ikkje ha formula selected --------
 
 });
 
